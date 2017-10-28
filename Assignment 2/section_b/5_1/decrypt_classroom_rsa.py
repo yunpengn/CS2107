@@ -10,34 +10,26 @@ r = (p - 1) * (q - 1)
 e = 65537
 
 # Below we first need to find d.
-def multiplicative_inverse(e, phi):
-    d = 0
-    x1 = 0
-    x2 = 1
-    y1 = 1
-    temp_phi = phi
-    
-    while e > 0:
-        temp1 = temp_phi / e
-        temp2 = temp_phi - temp1 * e
-        temp_phi = e
-        e = temp2
-        
-        x = x2- temp1 * x1
-        y = d - temp1 * y1
-        
-        x2 = x1
-        x1 = x
-        d = y1
-        y1 = y
-    
-    if temp_phi == 1:
-        return d + phi
+def ext_Euclid(n, m):
+	if (m == 0):
+		return 1, 0
+	else:
+		x, y = ext_Euclid(m, n % m)
+		x, y = y, (x - (n // m) * y)
+		return x, y
 
-d, d1 = multiplicative_inverse(e, r)
+d, d1 = ext_Euclid(e, r)
+
+while d < 0:
+	d = d + r
 
 c = int("16a8344aeb9a2d1cd449e22acd976a1a712a51982ba0151355394a841f5e13b", 16)
 
+ciphertext = "16a8344aeb9a2d1cd449e22acd976a1a712a51982ba0151355394a841f5e13b"
 
+# for char in ciphertext:
+# 	print chr((ord(char) ** d) % N)
+# plain = [chr((ord(char) ** d) % N) for char in ciphertext]
+print chr((ord("1") ** d))
 
-print(d)
+# print(''.join(plain))
