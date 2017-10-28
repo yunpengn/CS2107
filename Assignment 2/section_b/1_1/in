@@ -1,0 +1,8 @@
+Welcome to the Proof of Work Challenge.
+Rules: I will provide hex encoded byte strings to you.
+Your task is to decode it and calculate the md5 hash.
+Return the md5 hash in hex encoded format back to me.
+You will need to do this 500 times.
+Ready? Go!
+99fc2c97f76396c522bd
+MD5: 
