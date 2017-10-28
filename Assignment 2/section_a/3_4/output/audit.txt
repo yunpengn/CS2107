@@ -1,0 +1,25 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Wed Oct 18 01:15:23 2017
+Invocation: foremost hidden.png 
+Output directory: /home/yunpeng/2107/section_a/3_4/output
+Configuration file: /etc/foremost.conf
+------------------------------------------------------------------
+File: hidden.png
+Start: Wed Oct 18 01:15:23 2017
+Length: 49 KB (50807 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+0:	00000098.zip 	      234 B 	      50574 	 
+1:	00000000.png 	      49 KB 	          0 	  (177 x 213)
+Finish: Wed Oct 18 01:15:23 2017
+
+2 FILES EXTRACTED
+	
+zip:= 1
+png:= 1
+------------------------------------------------------------------
+
+Foremost finished at Wed Oct 18 01:15:23 2017
