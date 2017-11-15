@@ -8,7 +8,9 @@ Q3. local file inclusion
 <NOT_GET_YET>
 
 Q4. SQL injection
-<NOT_GET_YET>
+cs2107{12b24aa36907e5b9d96156c197599a5f}
+
+Hint: use 1' OR TRUE --' for both username and password field
 
 Q5. SQL injection
 <NOT_GET_YET>
