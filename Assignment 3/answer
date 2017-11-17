@@ -19,4 +19,4 @@ Hint: use something 11908141851492' UNION SELECT 0, 0, '123', 9002 -- ' and then
 (This first part is long enough to ensure the SELECT clause before union has no row returned)
 
 Q6. SQL injection
-<NOT_GET_YET>
+cs2107{12b24aa36907e5b9d96156c197599a5f}
