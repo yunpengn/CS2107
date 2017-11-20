@@ -8,7 +8,7 @@ int main() {
 	seteuid(1001);
 	printf("Real user id = %d, effective user id = %d\n", getuid(), geteuid());
 
-	setuid(0);
+	seteuid(0);
 	printf("Real user id = %d, effective user id = %d\n", getuid(), geteuid());
 	
 	return 0;
